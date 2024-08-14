@@ -22,7 +22,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular project
-        run: npm run build --configuration production --output-path=dist/angular-practices  # Update with your project's output path
+        run: npm run build --output-path=dist/angular-practices  # Update with your project's output path
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
