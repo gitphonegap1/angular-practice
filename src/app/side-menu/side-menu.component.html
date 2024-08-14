@@ -1,0 +1,3 @@
+<ul class="docs-list">
+    <li class="docs-list-item p-2" *ngFor="let side of sideMenusList" [ngClass]="{'active': side.active}" (click)="getLink(side)">{{side.name}}</li>
+</ul>
