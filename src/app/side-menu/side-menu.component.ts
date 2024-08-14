@@ -13,6 +13,7 @@ export class SideMenuComponent {
  sideMenusList:any = [
   {id: 1, name: 'Direcrtive', path: 'essentials/directive'},
   {id: 2, name: 'Component', path: 'essentials/component'},
+  {id: 3, name: 'Pipe', path: 'essentials/pipe'},
  ]
  constructor(private router: Router){}
  
