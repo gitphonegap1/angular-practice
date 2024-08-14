@@ -5,6 +5,10 @@ on:
     branches:
       - main  # Trigger on push to the main branch
 
+
+permissions:
+  contents: write  # Explicitly set write permissions for contents
+
 jobs:
   build:
     runs-on: ubuntu-latest
