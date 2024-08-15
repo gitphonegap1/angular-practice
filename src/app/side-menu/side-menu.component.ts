@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
   styleUrl: './side-menu.component.sass'
 })
 export class SideMenuComponent {
+  @Output() close: EventEmitter<any> = new EventEmitter<any>();
+
  sideMenusList:any = [
   {id: 1, name: 'NgModule', path: 'essentials/ngmodule'},
   {id: 2, name: 'Direcrtive', path: 'essentials/directive'},
@@ -24,6 +26,7 @@ export class SideMenuComponent {
   this.sideMenusList.forEach((x?:any) => {
     x.active = x.id == side.id;
   });
+  this.close.emit();
   this.router.navigate([side.path])
  }
 
