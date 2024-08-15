@@ -11,9 +11,12 @@ import { Router } from '@angular/router';
 })
 export class SideMenuComponent {
  sideMenusList:any = [
-  {id: 1, name: 'Direcrtive', path: 'essentials/directive'},
-  {id: 2, name: 'Component', path: 'essentials/component'},
-  {id: 3, name: 'Pipe', path: 'essentials/pipe'},
+  {id: 1, name: 'NgModule', path: 'essentials/ngmodule'},
+  {id: 2, name: 'Direcrtive', path: 'essentials/directive'},
+  {id: 3, name: 'Component', path: 'essentials/component'},
+  {id: 4, name: 'Dependency Injection', path: 'essentials/dependencyinjection'},
+  {id: 5, name: 'Pipes', path: 'essentials/pipes'},
+  {id: 6, name: 'Custom Pipes', path: 'essentials/custompipes'}
  ]
  constructor(private router: Router){}
  
