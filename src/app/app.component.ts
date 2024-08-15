@@ -9,7 +9,7 @@ import { HeaderComponent } from "./header/header.component";
 import * as faRegularSvg from '@fortawesome/free-regular-svg-icons';
 import * as faSolidSvg from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
-
+import { filter, map, Observable } from 'rxjs';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -31,5 +31,24 @@ export class AppComponent {
   public closeMenu = () => {
     this.miniMenu = false;
   }
+
+
+  ngOnInit(){
+  //const obs = Observable.create(this.AsyncStream);
+  //const obs2 = obs.pipe(map((res:any) => Math.round(res)));
+  //const obs3 = obs2.pipe(filter((res:any) => res > 4));
+
+  // obs3.subscribe((res:any)=> this.Listener(res));
+  }
+
+  public AsyncStream = (observer:any) => {
+    const tim = setInterval(()=>{
+      observer.next(Math.random()*10);
+    })
+  }
  
+  public Listener = (res?:any) => {
+     console.log(res)
+  }
+
 }

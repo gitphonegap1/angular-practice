@@ -16,9 +16,12 @@ export class SideMenuComponent {
   {id: 1, name: 'NgModule', path: 'essentials/ngmodule'},
   {id: 2, name: 'Direcrtive', path: 'essentials/directive'},
   {id: 3, name: 'Component', path: 'essentials/component'},
-  {id: 4, name: 'Dependency Injection', path: 'essentials/dependencyinjection'},
-  {id: 5, name: 'Pipes', path: 'essentials/pipes'},
-  {id: 6, name: 'Custom Pipes', path: 'essentials/custompipes'}
+  {id: 4, name: 'Component Life Cycle', path: 'essentials/componentlifecycle'},
+  {id: 5, name: 'Dependency Injection', path: 'essentials/dependencyinjection'},
+  {id: 6, name: 'Pipes', path: 'essentials/pipes'},
+  {id: 7, name: 'Custom Pipes', path: 'essentials/custompipes'},
+  {id: 8, name: 'Services', path: 'essentials/services'},
+  {id: 9, name: 'RxJs', path: 'essentials/rxjs'}
  ]
  constructor(private router: Router){}
  
