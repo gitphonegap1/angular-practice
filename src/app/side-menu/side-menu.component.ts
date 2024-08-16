@@ -21,7 +21,8 @@ export class SideMenuComponent {
   {id: 6, name: 'Pipes', path: 'essentials/pipes'},
   {id: 7, name: 'Custom Pipes', path: 'essentials/custompipes'},
   {id: 8, name: 'Services', path: 'essentials/services'},
-  {id: 9, name: 'RxJs', path: 'essentials/rxjs'}
+  {id: 9, name: 'Interceptors', path: 'essentials/interceptor'},
+  {id: 10, name: 'RxJs', path: 'essentials/rxjs'}
  ]
  constructor(private router: Router){}
  

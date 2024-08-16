@@ -3,8 +3,10 @@ import { provideRouter, withHashLocation, withRouterConfig } from '@angular/rout
 
 import { routes } from './app.routes';
 import { DataTrans } from './services/data';
-import { provideHttpClient } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
 import { CLIPBOARD_OPTIONS, ClipboardButtonComponent, provideMarkdown } from 'ngx-markdown';
+import { InterceptorService } from './services/interceptor';
+import { HttpInService } from './services/httpservice';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,7 +17,12 @@ export const appConfig: ApplicationConfig = {
         paramsInheritanceStrategy: 'always'
       }), withHashLocation()), 
     DataTrans, 
-    provideHttpClient(),
+    provideHttpClient(withInterceptors([InterceptorService]), withInterceptorsFromDi()),
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpInService,
+      multi: true
+    },
     provideMarkdown()
   ]
 };
