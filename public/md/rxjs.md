@@ -33,7 +33,7 @@ function Listener(res){
 
 **How to unsubscribe in RxJs?**
 
-using **subscriber.unsubscribe()**
+using `subscriber.unsubscribe()`
 
 **Explain concept of operators with sample code?**
 
