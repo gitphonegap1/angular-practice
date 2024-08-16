@@ -36,8 +36,13 @@ function Listener(res){
 using **subscriber.unsubscribe()**
 
 **Explain concept of operators with sample code?**
+
 **How to install RxJs?**
+
 **Differentiate between promise and RxJs?**
+
 **In Angular where have you used RxJs?**
+
 **Which operator have you used from RxJs?**
+
 **What is Push/reactive vs Pull/Imperative?**
