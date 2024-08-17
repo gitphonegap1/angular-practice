@@ -32,7 +32,7 @@ export class AppComponent {
     //const obs3 = obs2.pipe(filter((res:any) => res > 4));
   
     // obs3.subscribe((res:any)=> this.Listener(res));
-    this.callJson()
+    // this.callJson()
   }
 
   public callJson = () => {

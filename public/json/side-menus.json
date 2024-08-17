@@ -1,0 +1,14 @@
+[
+    {"name": "Elements in Angular", "path": "essentals/elementsinangular "},
+    {"name": "NgModule", "path": "essentials/ngmodule"},
+    {"name": "Direcrtives", "path": "essentials/directives"},
+    {"name": "Custom Direcrtives", "path": "essentials/customdirectives"},
+    {"name": "Component", "path": "essentials/component"},
+    {"name": "Component Life Cycle", "path": "essentials/componentlifecycle"},
+    {"name": "Dependency Injection", "path": "essentials/dependencyinjection"},
+    {"name": "Pipes", "path": "essentials/pipes"},
+    {"name": "Custom Pipes", "path": "essentials/custompipes"},
+    {"name": "Services", "path": "essentials/services"},
+    {"name": "Interceptors", "path": "essentials/interceptor"},
+    {"name": "RxJs", "path": "essentials/rxjs"}
+]
