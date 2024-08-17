@@ -1,5 +1,10 @@
 [
-    {"name": "Elements in Angular", "path": "essentals/elementsinangular "},
+    {"name": "Angular", "path": "essentials/angular"},
+    {"name": "AngularJs vs Angular", "path": "essentials/angularjsvsangular"},
+    {"name": "Angular Cli", "path": "essentials/angularcli"},
+    {"name": "Decorators", "path": "essentials/decorators"},
+    {"name": "Templates", "path": "essentials/templates"},
+    {"name": "Elements in Angular", "path": "essentials/elementsinangular"},
     {"name": "NgModule", "path": "essentials/ngmodule"},
     {"name": "Direcrtives", "path": "essentials/directives"},
     {"name": "Custom Direcrtives", "path": "essentials/customdirectives"},

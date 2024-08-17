@@ -1,4 +1,4 @@
-### Custom Directives
+### Directives
 
 In angular directives are special markers on DOM element (such as element, class or attribute) which tells angular to do something with that element or children. Directives are core features of angular and helps in manipulating the DOM by adding behaviour to the existing elements, transforming the appearence or layout, or creating new elements dynamically. 
 

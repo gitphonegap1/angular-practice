@@ -1,4 +1,4 @@
-### Directive
+### Custom Directive
 ---
 
 Directives add behaviour to an existing DOM element or an existing component instance.
