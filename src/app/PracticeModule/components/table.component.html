@@ -1,5 +1,5 @@
 <p>Enter No: <input type="number" [(ngModel)]="value"/></p>
 
-<h5 highlightor [value]="value">{{title}}</h5>
+<h5 highlightor [value]="value" (trans)="getClick()" #ch>{{title}}</h5>
 
 <p>From Service :: {{tes.storeObservable | async}}</p>

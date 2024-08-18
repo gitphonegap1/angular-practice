@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 import { TestService } from "../servies/test.service";
 import { filter, map, Observable, Subject, take, takeUntil } from "rxjs";
 
@@ -9,6 +9,7 @@ import { filter, map, Observable, Subject, take, takeUntil } from "rxjs";
 })
 
 export class TableComponent {
+ @ViewChild('ch', {static: true}) ch:ElementRef | undefined;
  title:string = "This is table component";
  value:any;
  prok = new Subject<any>();
@@ -18,6 +19,7 @@ export class TableComponent {
  }
 
  ngOnInit():void {
+    console.log(this.ch);
     this.tes.data = 'I am Radha Krishna';
 
     this.tes.storeObservable.subscribe({
@@ -48,7 +50,7 @@ export class TableComponent {
     const obs = new Observable((observer)=>{
         setInterval(()=>{
             observer.next(Math.round(Math.random() * 10));
-            // observer.complete()
+            observer.complete()
         })
        
         // observer.complete();
@@ -68,14 +70,19 @@ export class TableComponent {
     })
 
 
-    setTimeout(()=>{
-        this.prok.next('');
-        this.prok.complete();
-    },2000);
+    // setTimeout(()=>{
+    //     this.prok.next('');
+    //     this.prok.complete();
+    // },2000);
 
 
  }
  
+
+ public getClick = () => {
+    this.prok.next('');
+    this.prok.complete();
+ }
 
  ngDestroy():void{
 
