@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <div class="col-12">
+        <span *ngFor="let m of menusList" class="span-link" (click)="goToLink(m)">
+            <span class="inner-text">{{m.name}}</span>
+        </span>
+    </div>
+</div>

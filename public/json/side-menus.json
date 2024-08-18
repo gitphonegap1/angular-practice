@@ -10,10 +10,16 @@
     {"name": "Custom Direcrtives", "path": "essentials/customdirectives"},
     {"name": "Component", "path": "essentials/component"},
     {"name": "Component Life Cycle", "path": "essentials/componentlifecycle"},
+    {"name": "Data Binding", "path":"essentials/databinding"},
+    {"name": "Architecture of Angular", "path": "essentials/architectureofangular"},
+    {"name": "SPA", "path": "essentials/spa"},
+    {"name": "Routing", "path": "essentials/routing"},
     {"name": "Dependency Injection", "path": "essentials/dependencyinjection"},
     {"name": "Pipes", "path": "essentials/pipes"},
     {"name": "Custom Pipes", "path": "essentials/custompipes"},
     {"name": "Services", "path": "essentials/services"},
     {"name": "Interceptors", "path": "essentials/interceptor"},
+    {"name": "Lazy Loading", "path": "essentials/lazyloading"},
+    {"name": "Ng Serve vs Ng Build", "path": "essentials/ngservevsngbuild"},
     {"name": "RxJs", "path": "essentials/rxjs"}
 ]

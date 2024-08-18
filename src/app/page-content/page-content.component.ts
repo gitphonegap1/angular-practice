@@ -21,6 +21,7 @@ ngOnInit():void {
   this.route.paramMap.subscribe((res?:any)=>{
     // console.log(res.params.path)
     const path = res.params.path;
+    console.log(path);
     this.srcPath = `md/${path}.md`
   })
 }
