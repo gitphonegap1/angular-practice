@@ -18,6 +18,7 @@
     {"name": "Pipes", "path": "essentials/pipes"},
     {"name": "Custom Pipes", "path": "essentials/custompipes"},
     {"name": "Services", "path": "essentials/services"},
+    {"name": "HTTP Calls", "path": "essentials/httpcalls"},
     {"name": "Interceptors", "path": "essentials/interceptor"},
     {"name": "Lazy Loading", "path": "essentials/lazyloading"},
     {"name": "Ng Serve vs Ng Build", "path": "essentials/ngservevsngbuild"},

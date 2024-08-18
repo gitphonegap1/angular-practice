@@ -7,6 +7,7 @@ import { HTTP_INTERCEPTORS, provideHttpClient, withInterceptors, withInterceptor
 import { CLIPBOARD_OPTIONS, ClipboardButtonComponent, provideMarkdown } from 'ngx-markdown';
 import { InterceptorService } from './services/interceptor';
 import { HttpInService } from './services/httpservice';
+import { BrowserModule } from '@angular/platform-browser';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -23,6 +24,7 @@ export const appConfig: ApplicationConfig = {
       useClass: HttpInService,
       multi: true
     },
-    provideMarkdown()
+    provideMarkdown(),
+    BrowserModule
   ]
 };
