@@ -1,6 +1,7 @@
 .page-split
     display: flex
     margin-top: 60px
+    height: calc(100vh - 60px)
 
 .side-menu
     width: 200px
@@ -11,10 +12,13 @@
     top: 60px
     left: 0px
     overflow-y: auto
+    padding-bottom: 100px
 
 .page-content
     flex: calc(100vw - 200px)
     margin-left: 200px
+    overflow: auto
+    padding-bottom: 100px
 
 .top-menu
   width: 100%
@@ -47,10 +51,12 @@
         position: relative
         display: none
         overflow-y: auto
+        padding-bottom: 100px
 
     .page-content
         margin-left: 0px
         width: 100%
+        padding-bottom: 120px!important
 
     .top-menu
         display: block

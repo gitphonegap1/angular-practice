@@ -22,5 +22,6 @@
     {"name": "Interceptors", "path": "essentials/interceptor"},
     {"name": "Lazy Loading", "path": "essentials/lazyloading"},
     {"name": "Ng Serve vs Ng Build", "path": "essentials/ngservevsngbuild"},
-    {"name": "RxJs", "path": "essentials/rxjs"}
+    {"name": "RxJs", "path": "essentials/rxjs"},
+    {"name": "Software Development Lifecycle", "path":"essentials/sdlc"}
 ]
