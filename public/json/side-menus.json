@@ -23,5 +23,6 @@
     {"name": "Lazy Loading", "path": "essentials/lazyloading"},
     {"name": "Ng Serve vs Ng Build", "path": "essentials/ngservevsngbuild"},
     {"name": "RxJs", "path": "essentials/rxjs"},
-    {"name": "Software Development Lifecycle", "path":"essentials/sdlc"}
+    {"name": "Software Development Lifecycle", "path":"essentials/sdlc"},
+    {"name": "Debounce vs Throttling", "path":"essentials/debouncevsthrottling"}
 ]
