@@ -10,8 +10,11 @@ There are two types of interceptors.
 Dependency Injection Based Interceptors
 --
 **Structure:** Implemented as classes with specific methods (intercept) that Angular can inject into the HTTP request pipeline.
+
 **Integration:** Registered globally using Angular's HTTP_INTERCEPTORS in a module's provider array.
+
 **Flexibility:** Can access services and dependencies via constructor injection, making them powerful for complex tasks.
+
 **Scalability:** Better for larger applications with multiple, reusable interceptors.
 
 ``` typescript
@@ -30,8 +33,11 @@ export class HttpInService implements HttpInterceptor {
 Function Based Interceptors
 --
 **Structure:** Simple functions that process requests and responses directly.
+
 **Integration:** Often used in custom libraries or when using frameworks that don't support DI.
+
 **Flexibility:** Limited, as they can't directly access services or dependencies unless manually passed in.
+
 **Scalability:** Suitable for small applications or simple, one-off tasks.
 
 ```typescript
