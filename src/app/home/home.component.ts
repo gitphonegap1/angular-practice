@@ -20,7 +20,7 @@ export class HomeComponent {
   }
 
   public loadSideMenu = async () => {
-    const url = `json/side-menus.json`;
+    const url = `json/technology-stack.json`;
     const mlist = await firstValueFrom(this.http.get(url)).then((res: any) => {
       res.forEach((x: any, ix: any) => { x.id = ix + 1 });
       return res;

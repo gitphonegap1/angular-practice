@@ -19,9 +19,8 @@ constructor(private route: ActivatedRoute){
 
 ngOnInit():void {
   this.route.paramMap.subscribe((res?:any)=>{
-    // console.log(res.params.path)
-    const path = res.params.path;
-    this.srcPath = `md/${path}.md`
+    const params:any = res.params;
+    this.srcPath = `md/${params.path}/${params.file}.md`
   })
 }
 

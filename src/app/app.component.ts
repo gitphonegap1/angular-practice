@@ -9,7 +9,7 @@ import { HeaderComponent } from "./header/header.component";
 import * as faRegularSvg from '@fortawesome/free-regular-svg-icons';
 import * as faSolidSvg from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
-import { filter, map, Observable, Subject } from 'rxjs';
+import { filter, fromEvent, map, Observable, Subject, Subscription, throttleTime } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-root',
@@ -24,7 +24,8 @@ export class AppComponent {
   faicons = {
     menu: faSolidSvg.faBars,
     close: faSolidSvg.faXmark
-  }
+  };
+  private resizeSubscription!: Subscription;
   constructor(private http: HttpClient){}
   ngOnInit(){
     //const obs = Observable.create(this.AsyncStream);
@@ -33,6 +34,17 @@ export class AppComponent {
   
     // obs3.subscribe((res:any)=> this.Listener(res));
     // this.callJson()
+    this.resizeSubscription = fromEvent(window, 'resize')
+    .pipe(throttleTime(1000)) // Throttle the resize event to once every 1 second
+    .subscribe((event:any) => {
+      const width:any = event.target.innerWidth;
+      if(width > 768){
+        this.closeMenu();
+      }
+      // You can add your logic here, such as adjusting layout or dimensions
+    });
+
+
   }
 
   public callJson = () => {
